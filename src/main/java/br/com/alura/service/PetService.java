@@ -29,7 +29,6 @@ public class PetService {
         System.out.println("Digite o id ou nome do abrigo:");
         String idOuNome = new Scanner(System.in).nextLine();
 
-        HttpClient client = HttpClient.newHttpClient();
         String uri = "http://localhost:8080/abrigos/" +idOuNome +"/pets";
         HttpResponse<String> response = clientHttpConfiguration.dispararRequisicaoGet(uri);
         int statusCode = response.statusCode();
