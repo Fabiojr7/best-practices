@@ -22,7 +22,7 @@ public class AbrigoServiceTest {
     private Abrigo abrigo = new Abrigo("Teste", "61981880392", "abrigo@gmail.com");
 
     @Test
-    public void deveVerficarSeDispararResuisicaoGetSeraChamado() throws IOException, InterruptedException {
+    public void deveVerficarSeDispararRequisicaoGetSeraChamado() throws IOException, InterruptedException {
         abrigo.setId(0L);
         String expectedAbrigosCadastrados = "Abrigos cadastrados:";
         String expectedIdENome = "0 - Teste";
